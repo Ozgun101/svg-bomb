@@ -1,3 +1,3 @@
 # SVG XML Bomb
-The **SVG Bomb** Is a type of XML bomb a malicious technique which exploits XML's ability to format nested data structures. When a vulnerable parsers attempts to resolve the structure, a tremendous amount of memory is consumed causing the system to hang or crash.
-> ⚠️ **Warning**: **Do not use this file for malicious purposes. Unauthorized usage may lead to system instability, legal consequences, or harm.**
+The **SVG Bomb** Is a type of XML bomb. XML bombs are a type of DoS attack which leverages XMLs ability to analyze nested data structures. By defining numerous nested entities, or in this case SVG paths, an extremly long element is defined leading to resource exhaustion. Many modern day XML parsers block this type of exploit by limit the number of entity expansions allowed during parsing. The SVG bomb is a workaround to this, as through the use of nested SVG paths in groups leads to a DoS as the XML parsers attempts to process 10^26 paths.
+> ⚠️ **Warning**: **Do not use this file for malicious purposes. This will lead to system instability.**
